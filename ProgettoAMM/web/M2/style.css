@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28-mar-2017, 11.42.12
+    Author     : sanna
+*/
+
+body
+{
+    background-color: #CE5A57;
+    color: #FFFFFF;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+h1
+{
+    color: #000000;
+}
+
+h2
+{
+    color: #201D1D;
+}
+
+h3
+{
+    color: #081534;
+}
+
+a:link
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #FFF365;
+    font-weight: bold;
+}
+
+a:visited
+{
+    color: #65455A;
+}
+
+nav ol
+{
+    list-style-type: none;
+}
+
+#indice ol
+{
+    list-style-type: none;
+}
+
+label::before, label::after
+{
+    content: '\A';
+    white-space: pre;
+}
+
+button
+{
+    display: block;
+    margin-top: 5px;
+}
+
+input
+{
+    display: inline;
+    margin-top: 4px;
+    margin-bottom: 3px;
+}
+
+header
+{
+    position: fixed;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>NerdBook</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Federico Sanna">
+        <meta name="keywords" content="social network nerd profile">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+    
+    <body>
+        
+        <header>
+            <div id="title">
+                <h1>NerdBook - Il nuovo social network
+                per gli amanti del computer</h1>
+            </div>
+        </header>
+        
+        <nav>
+            <ol>
+                <li><a href="descrizione.html">Descrizione</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ol>
+        </nav>
+        
+        <div id="textProfilo">
+            <p>Inserisci i dati del tuo profilo.</p>
+        </div>
+        
+        <div id="formProfilo">
+            <form action="#" method="post">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="cognome">Cognome</label>
+                <input type="text" name="cognome" id="cognome">
+                <label for="propic">Immagine del profilo</label>
+                <input type="url" name="propic" id="propic">
+                <label for="phrase">Frase di presentazione</label>
+                <textarea name="phrase" id="phrase"
+                 rows="3" cols="30"></textarea>
+                <label for="birthdate">Data di nascita</label>
+                <input type="date" name="birthdate" id="birthdate">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass">
+                <label for="passconf">Conferma Password</label>
+                <input type="password" name="passconf" id="passconf">
+                <button type="submit">Conferma modifiche</button>
+            </form>
+        </div>
+        
+    </body>
+</html>
