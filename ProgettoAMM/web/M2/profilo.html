@@ -14,8 +14,7 @@
         
         <header>
             <div id="title">
-                <h1>NerdBook - Il nuovo social network
-                per gli amanti del computer</h1>
+                <h1>NerdBook</h1>
             </div>
         </header>
         
@@ -23,8 +22,24 @@
             <ol>
                 <li><a href="descrizione.html">Descrizione</a></li>
                 <li><a href="login.html">Login</a></li>
+                <li><a id="attivo" href="profilo.html">Profilo</a></li>
+                <li><a href="bacheca.html">Bacheca</a></li>
             </ol>
         </nav>
+        
+        <div id="sideBar">
+            <div id="sbUsers">
+                <h2>Persone</h2>
+                <p>Paolo Bitta</p>
+                <p>Renato Uno</p>
+                <p>Gianna Filava</p>
+            </div>
+            <div>
+                <h2>Gruppi</h2>
+                <p class="musicGroup">Musica</p>
+                <p class="readGroup">I Lettori</p>
+            </div>
+        </div>
         
         <div id="textProfilo">
             <p>Inserisci i dati del tuo profilo.</p>
@@ -32,21 +47,21 @@
         
         <div id="formProfilo">
             <form action="#" method="post">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome">
-                <label for="cognome">Cognome</label>
-                <input type="text" name="cognome" id="cognome">
-                <label for="propic">Immagine del profilo</label>
-                <input type="url" name="propic" id="propic">
-                <label for="phrase">Frase di presentazione</label>
-                <textarea name="phrase" id="phrase"
+                <label class="classLabel" for="nome">Nome</label>
+                <input class="classInput" type="text" name="nome" id="nome">
+                <label class="classLabel" for="cognome">Cognome</label>
+                <input class="classInput" type="text" name="cognome" id="cognome">
+                <label class="classLabel" for="propic">Immagine del profilo</label>
+                <input class="classInput" type="url" name="propic" id="propic">
+                <label class="classLabel" for="phrase">Frase di presentazione</label>
+                <textarea class="classInput" name="phrase" id="phrase"
                  rows="3" cols="30"></textarea>
-                <label for="birthdate">Data di nascita</label>
-                <input type="date" name="birthdate" id="birthdate">
-                <label for="pass">Password</label>
-                <input type="password" name="pass" id="pass">
-                <label for="passconf">Conferma Password</label>
-                <input type="password" name="passconf" id="passconf">
+                <label class="classLabel" for="birthdate">Data di nascita</label>
+                <input class="classInput" type="date" name="birthdate" id="birthdate">
+                <label class="classLabel" for="pass">Password</label>
+                <input class="classInput" type="password" name="pass" id="pass">
+                <label class="classLabel" for="passconf">Conferma Password</label>
+                <input class="classInput" type="password" name="passconf" id="passconf">
                 <button type="submit">Conferma modifiche</button>
             </form>
         </div>

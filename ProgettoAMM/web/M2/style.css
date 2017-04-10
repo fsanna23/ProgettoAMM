@@ -10,14 +10,37 @@ and open the template in the editor.
 
 body
 {
-    background-color: #CE5A57;
+    background-color: #A5A5A5;
     color: #FFFFFF;
     font-family: "Trebuchet MS", Arial, sans-serif;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+header
+{
+    background: #226666;
+    float: left;
+    font-family: "Eras ITC", Arial, sans-serif;
+    height: 55px;
+    padding-top: 10px;
+    text-align:center;
+    margin: 0px;
+    width:214px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 
 h1
 {
     color: #000000;
+}
+
+header h1
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 h2
@@ -30,10 +53,16 @@ h3
     color: #081534;
 }
 
+a
+{
+    margin: 0px;
+}
+
 a:link
 {
     color: #000000;
     text-decoration: none;
+    font-size: 25px;
 }
 
 a:hover
@@ -44,23 +73,43 @@ a:hover
 
 a:visited
 {
-    color: #65455A;
+    color: #871F0C;
 }
 
-nav ol
+a:visited:hover
+{
+    color: #FFF365;
+}
+
+nav
+{
+    background-color: #669999;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    width: 100%;
+}
+
+nav ol, nav li
 {
     list-style-type: none;
+    display: inline-block;
+    padding: 0px;
+}
+
+nav li a
+{
+    padding: 18px;
+}
+
+nav li #attivo
+{
+    background-color: #171313;
 }
 
 #indice ol
 {
     list-style-type: none;
-}
-
-label::before, label::after
-{
-    content: '\A';
-    white-space: pre;
+    margin: 0px;
 }
 
 button
@@ -76,7 +125,194 @@ input
     margin-bottom: 3px;
 }
 
-header
+/* Task 4 */
+
+#sideBar
 {
+    float: left;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width:214px;
+    background-color: #6F6E88;
+    padding-bottom: 30px;
     position: fixed;
 }
+
+#sideBar p, #sideBar h2
+{
+    padding-left: 20px;
+}
+
+#sbUsers p::before
+{
+    content: url("img/avatar.png");
+    margin-right: 6px;
+    border-bottom: 6px
+    
+}
+
+.musicGroup::before
+{
+    content: url("img/music.png");
+    margin-right: 6px;
+}
+
+.readGroup::before
+{
+    content: url("img/glasses.png");
+    margin-right: 6px;
+}
+
+.post
+{
+    padding: 20px;
+    background-color: #0E8D67;
+    border-style: solid;
+    width:50%;
+    margin-left: 31%;
+    margin-top: 30px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #000000;
+}
+
+.profilePic
+{
+   float:left;
+   margin-right: 10px;
+  
+}
+.nome h4
+{
+    height: 0px;
+    padding-top: 33px;
+    padding-bottom: 27px;
+    margin: 0px;
+    font-size: 30px;
+}
+.text
+{
+   padding-top:40px;; 
+}
+
+.attach
+{
+    height: 300px;
+    width: 300px;
+}
+
+.post a
+{
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 18px;
+}
+
+/* Fine Task 4 */
+
+/* Task 5 */
+
+/* Pagina Login */
+
+#textLogin, #formLogin
+{
+    margin-left: 458px;
+    margin-top: 30px;
+    height: auto;
+    width: auto;
+    margin-right: 500px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #000000;
+}
+
+#textLogin p
+{
+    font-size: 25px;
+    height: 30px;
+    width: 550px;
+    margin-bottom: 0px;
+    padding-left: 6px;
+}
+
+#formLogin
+{
+    border-color: #000000;
+    border-style: solid;
+    width: 340px;
+    padding-left: 140px;
+    padding-bottom: 30px;
+    padding-top: 14px;
+    background-color: #0E8D67;
+}
+
+#formLogin form
+{
+    height: auto;
+    width: 200px;
+    margin-right: 0px; 
+}
+#formLogin input
+{
+    margin-bottom: 10px;
+    height: 16px;
+    width: 200px;
+}
+
+#formLogin button
+{
+    width:204px;
+}
+
+/* Fine pagina login */
+
+/* Pagina Profilo */
+
+#formProfilo label
+{
+    float: left;
+    display: block;
+    margin-top: 19px;
+}
+
+#formProfilo input, #formProfilo textarea
+{
+    display: block;
+    margin-top: 20px;
+}
+
+#formProfilo label:first-child
+{
+    margin-top: 2px;
+}
+
+#formProfilo, #textProfilo
+{
+    margin-left: 500px;
+    margin-right: auto;
+}
+
+.classInput
+{
+    margin-left: 280px;
+}
+
+input.classInput
+{
+    height: 20px;
+}
+
+textarea.classInput, input[type="date"].classInput
+{
+    width:169px;
+}
+
+#formProfilo button
+{
+    margin-top: 29px;
+    margin-left: 22px;
+    width: 408px;
+    height: 30px;
+}
+
+/* Fine pagina profilo */
+
+/* Fine Task 5 */
