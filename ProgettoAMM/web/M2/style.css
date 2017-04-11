@@ -73,7 +73,7 @@ a:hover
 
 a:visited
 {
-    color: #871F0C;
+    color: #ffffff;
 }
 
 a:visited:hover
@@ -103,7 +103,7 @@ nav li a
 
 nav li #attivo
 {
-    background-color: #171313;
+    background-color: #13137E;
 }
 
 #indice ol
@@ -116,6 +116,9 @@ button
 {
     display: block;
     margin-top: 5px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #9FE6CD;
 }
 
 input
@@ -125,6 +128,11 @@ input
     margin-bottom: 3px;
 }
 
+input:focus, textarea:focus 
+{
+    border: 2px solid #52f5c4;
+}
+
 /* Task 4 */
 
 #sideBar
@@ -132,7 +140,7 @@ input
     float: left;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     width:214px;
-    background-color: #6F6E88;
+    background-color: #669999;
     padding-bottom: 30px;
     position: fixed;
 }
@@ -214,11 +222,11 @@ input
 
 #textLogin, #formLogin
 {
-    margin-left: 458px;
     margin-top: 30px;
-    height: auto;
-    width: auto;
-    margin-right: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    width: 500px;
     border-radius: 10px;
     border-width: 2px;
     border-color: #000000;
@@ -228,9 +236,10 @@ input
 {
     font-size: 25px;
     height: 30px;
-    width: 550px;
+    width: 500px;
     margin-bottom: 0px;
     padding-left: 6px;
+    margin-left: 15px;
 }
 
 #formLogin
@@ -248,7 +257,7 @@ input
 {
     height: auto;
     width: 200px;
-    margin-right: 0px; 
+    margin-right: auto;
 }
 #formLogin input
 {
@@ -260,39 +269,68 @@ input
 #formLogin button
 {
     width:204px;
+    height: 31px;
+    box-shadow: 0 0 10px rgba(0,0,0,.6);
 }
 
 /* Fine pagina login */
 
 /* Pagina Profilo */
 
+
+#boxProfilo
+{
+    width: 64%;
+    margin-left: 24%;
+    margin-top: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #0E8D67;
+}
+
+#formProfilo form
+{
+    height: 10%;
+}
+
 #formProfilo label
 {
     float: left;
     display: block;
-    margin-top: 19px;
+    margin-top: 0px;
+    margin-left: 30px;
 }
 
 #formProfilo input, #formProfilo textarea
 {
+    float: left;
     display: block;
-    margin-top: 20px;
+    margin-top: 0px;
+    position: relative;
+    bottom: 21px;
 }
 
 #formProfilo label:first-child
 {
-    margin-top: 2px;
+    margin-top: 30px;
 }
 
 #formProfilo, #textProfilo
 {
-    margin-left: 500px;
+    margin-left: auto;
     margin-right: auto;
+    padding-left: auto;
+    width: 30%;
+}
+
+#textProfilo p
+{
+    margin-left: 30px;
 }
 
 .classInput
 {
-    margin-left: 280px;
+    margin-left: 99%;
 }
 
 input.classInput
@@ -308,11 +346,226 @@ textarea.classInput, input[type="date"].classInput
 #formProfilo button
 {
     margin-top: 29px;
-    margin-left: 22px;
-    width: 408px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    width: 348px;
     height: 30px;
+}
+
+#profilePic
+{
+    float: left;
+    margin-left: 50px;
+    margin-top: 60px;    
+}
+
+#profilePic img
+{
+    width: 170px;
+    height: 170px;
+}
+
+/* Logout viene usato sia per profilo che per bacheca*/
+#logout
+{
+    display: inline-block;
+    position: relative;
+    left: 98px;
+    top: -10px;
+    height: auto;
+}
+
+#logout h4
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+}
+
+#logout p
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#logout a
+{
+    font-size: 15px;
+}
+
+#content
+{
+    
+    float: right;
+    position: relative;
+    right: 140px;
+    display: inline-block;
+}
+
+#logout h4::before
+{
+    content: url("img/bitta-sml.jpg");
+    /*display: inline-block;*/  
+    position: relative;
+    top: 23px;
+    right: 10px;
+    
 }
 
 /* Fine pagina profilo */
 
 /* Fine Task 5 */
+
+/* Task 6 */
+
+@media only screen and (max-width: 480px)
+{
+    header
+    {
+        width: 100%;
+        float: none;
+    }
+   
+    nav
+    {
+        text-align: center;
+        width: 100%;
+        float: left;
+        height: auto;
+        display: block;
+        padding-left: 10px;
+    }
+    
+    nav li
+    {
+        width: auto;
+        padding: auto;
+        height: 90%;
+        display: inline-block;
+    }
+    
+    nav li a:link
+    {
+        font-size: 18px;
+        float: left;
+    }
+    
+    nav ol
+    {
+        width: auto;
+        display: inline-block;
+        text-align: left;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-bottom: 18px;
+        padding-top: 18px;
+    }
+    
+    nav ol, nav li
+    {
+        list-style-type: none;
+        height: 100%;
+    }
+    
+    nav li:first-child
+    {
+        margin-left: 5px;
+    }
+
+    nav li a
+    {
+        padding: 5px;
+    }
+    
+    #content
+    {
+        width: 50px;
+        height: 30px;
+    }
+    
+    #sideBar
+    {
+        float: left;
+        position: static;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    
+   #sbUsers
+   {
+       width: 50%;
+       float: left;
+       
+   }
+    
+   #sbGroups
+   {
+       width: 49%;
+       float: left;
+   }
+   
+   #bacheca
+   {
+       float: left;
+       width: 100%;
+   }
+   
+   .post
+   {
+       align-content: center;
+       margin: auto;
+       margin-top: 40px;
+       
+   }
+   
+   .nome h4
+   {
+       margin-bottom: 10px;
+       display: block;
+       font-size: 19px;
+   }
+   
+   .post:last-child
+   {
+       margin-bottom: 20px;
+   }
+   
+   .attach
+   {
+       width: 130px;
+       height: 130px;
+   }
+   
+   
+   /*#logout
+   {
+       height: 40px;
+       margin-left: 22px;
+       margin-top: -24px;
+   }
+   
+   #logout h4
+   {
+       
+       font-size: 14px;
+       bottom: 10px;
+   }
+   
+   #logout h4::before
+   {
+       right: 45px;
+       top: 43px;
+   }*/
+   
+   #logout
+   {
+       display: none;
+   }
+   
+   
+   
+
+}
+
+/* Fine Task 6 */

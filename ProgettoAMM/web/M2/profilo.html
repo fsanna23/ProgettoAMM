@@ -25,6 +25,12 @@
                 <li><a id="attivo" href="profilo.html">Profilo</a></li>
                 <li><a href="bacheca.html">Bacheca</a></li>
             </ol>
+            <div id="content">
+                <div id="logout">
+                    <h4>Paolo Bitta</h4>               
+                    <p><a href="#">Logout</a></p>
+                </div>
+            </div>
         </nav>
         
         <div id="sideBar">
@@ -41,29 +47,42 @@
             </div>
         </div>
         
-        <div id="textProfilo">
-            <p>Inserisci i dati del tuo profilo.</p>
-        </div>
+        <div id="boxProfilo">
+            <div id="profilePic">
+                <img alt="profilePic" src="img/bitta-lrg.png">
+            </div>
         
-        <div id="formProfilo">
-            <form action="#" method="post">
-                <label class="classLabel" for="nome">Nome</label>
-                <input class="classInput" type="text" name="nome" id="nome">
-                <label class="classLabel" for="cognome">Cognome</label>
-                <input class="classInput" type="text" name="cognome" id="cognome">
-                <label class="classLabel" for="propic">Immagine del profilo</label>
-                <input class="classInput" type="url" name="propic" id="propic">
-                <label class="classLabel" for="phrase">Frase di presentazione</label>
-                <textarea class="classInput" name="phrase" id="phrase"
-                 rows="3" cols="30"></textarea>
-                <label class="classLabel" for="birthdate">Data di nascita</label>
-                <input class="classInput" type="date" name="birthdate" id="birthdate">
-                <label class="classLabel" for="pass">Password</label>
-                <input class="classInput" type="password" name="pass" id="pass">
-                <label class="classLabel" for="passconf">Conferma Password</label>
-                <input class="classInput" type="password" name="passconf" id="passconf">
-                <button type="submit">Conferma modifiche</button>
-            </form>
+            <div id="textProfilo">
+                <p>Inserisci i dati del tuo profilo.</p>
+            </div>
+        
+            <div id="formProfilo">
+                <form action="#" method="post">
+                    <label class="classLabel" for="nome">Nome</label>
+                    <input class="classInput" type="text" name="nome" id="nome"
+                           value="Paolo">
+                    <label class="classLabel" for="cognome">Cognome</label>
+                    <input class="classInput" type="text" name="cognome"
+                           id="cognome" value="Bitta">
+                    <label class="classLabel" for="propic">Immagine del profilo</label>
+                    <input class="classInput" type="url" name="propic"
+                           id="propic"
+                           value="https://lh3.ggpht.com/VFRt_Rs-l_cISJrAImR7Ddf1t_1rQ80Qi31GVCqFFZk4CLPpLSDXf0yo8km7B8EGjlQ">
+                    <label class="classLabel" for="phrase">Frase di presentazione</label>
+                    <textarea class="classInput" name="phrase" id="phrase"
+                    rows="3" cols="30">Mangio la pizza con l'ananas.</textarea>
+                    <label class="classLabel" for="birthdate">Data di nascita</label>
+                    <input class="classInput" type="date" name="birthdate"
+                            id="birthdate" value='1968-03-21'>
+                    <label class="classLabel" for="pass">Password</label>
+                    <input class="classInput" type="password" name="pass"
+                           id="pass" value='silvano'>
+                    <label class="classLabel" for="passconf">Conferma Password</label>
+                    <input class="classInput" type="password" name="passconf"
+                           id="passconf" value='silvano'>
+                    <button type="submit">Conferma modifiche</button>
+                </form>
+            </div>
         </div>
         
     </body>
