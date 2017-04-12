@@ -830,11 +830,16 @@ textarea.classInput, input[type="date"].classInput
         word-wrap: break-word;
     }
     
+    .classInput
+    {
+        margin-left: 180px;
+    }
     
     
     #boxProfilo
     {
         margin-left: 236px;
+        width: auto;
     }
     
 }
