@@ -34,6 +34,11 @@ public class PostFactory {
         post1.setContenuto("Stasera vado al cinema a dormire, buonanotte!");
         post1.setId(0);
         post1.setUtente(userFactory.getUserById(0));
+        
+        Post post2 = new Post();
+        post2.setContenuto("Ho mangiato un tramezzino da Ghiani. Era quadrato");
+        post2.setId(1);
+        post2.setUtente(userFactory.getUserById(1));
 
         
     }
