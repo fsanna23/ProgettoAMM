@@ -36,11 +36,71 @@ public class PostFactory {
         post1.setUtente(userFactory.getUserById(0));
         
         Post post2 = new Post();
-        post2.setContenuto("Ho mangiato un tramezzino da Ghiani. Era quadrato");
+        post2.setContenuto("Ho mangiato un tramezzino da Ghiani. Era quadrato.");
         post2.setId(1);
         post2.setUtente(userFactory.getUserById(1));
-
         
+        Post post3 = new Post();
+        post3.setContenuto("img/tramezzino.jpg");
+        post3.setId(2);
+        post3.setUtente(userFactory.getUserById(1));
+        post2.setPostType(Post.Type.IMAGE);
+        
+        Post post4 = new Post();
+        post4.setContenuto("Se ascoltate le canzoni di Gigi D'Alessio siete brutti.");
+        post4.setId(3);
+        post4.setUtente(userFactory.getUserById(2));
+        
+        Post post5 = new Post();
+        post5.setContenuto("https://www.youtube.com");
+        post5.setId(4);
+        post5.setUtente(userFactory.getUserById(2));
+        
+        listaPost.add(post1);
+        listaPost.add(post2);
+        listaPost.add(post3);
+        listaPost.add(post4);
+        listaPost.add(post5);
+     
+    }
+    
+    public Post getPostById(int id)
+    {
+        for (Post post : this.listaPost) {
+            if (post.getId() == id) {
+                return post;
+            }
+        }
+        return null;
+    }
+    
+    public List getPostList(User utente)
+    {
+
+        List<Post> listaPost = new ArrayList<Post>();
+
+        for (Post post : this.listaPost)
+        {
+            if (post.getUtente().equals(utente))
+            {
+                listaPost.add(post);
+            }
+        }
+        return listaPost;
+    }
+    
+    public List getPostList(Group gruppo)
+    {
+        List<Post> listaPost = new ArrayList<Post>();
+        
+        for (Post post : this.listaPost)
+        {
+            if (post.getGruppo().equals(gruppo))
+            {
+                listaPost.add(post);
+            }
+        }
+        return listaPost;
     }
     
 }

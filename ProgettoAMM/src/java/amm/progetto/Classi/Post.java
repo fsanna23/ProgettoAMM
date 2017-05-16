@@ -19,6 +19,7 @@ public class Post
     
     private int id;
     private User utente;
+    private Group gruppo;
     private String contenuto;
     private Type postType;
     
@@ -28,6 +29,7 @@ public class Post
         utente = null;
         contenuto = "";
         postType = Type.TEXT;
+        gruppo = null;
     }
     
     /**
@@ -84,6 +86,20 @@ public class Post
      */
     public void setPostType(Type postType) {
         this.postType = postType;
+    }
+    
+    /**
+     * @return the gruppo
+     */
+    public Group getGruppo() {
+        return gruppo;
+    }
+
+    /**
+     * @param gruppo the gruppo to set
+     */
+    public void setGruppo(Group gruppo) {
+        this.gruppo = gruppo;
     }
     
 }
